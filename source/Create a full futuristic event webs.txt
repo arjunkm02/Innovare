@@ -1,0 +1,209 @@
+Create a full futuristic event website using only:
+HTML + SCSS + JavaScript + GSAP CDN (diff files for html, scss, js)
+
+We are creating a premium dark futuristic landing page for a college tech fest.
+
+Event name: INNOVARE 2026
+Tagline: Redefining Possibilities
+
+File Structure:
+{
+  "name": "Innovare",
+  "path": "c:\\Users\\User\\OneDrive\\Desktop\\Innovare",
+  "type": "directory",
+  "children": [
+    {
+      "name": "index.html",
+      "type": "file"
+    },
+    {
+      "name": "script.js",
+      "type": "file"
+    },
+    {
+      "name": "style.scss",
+      "type": "file"
+    }
+  ],
+  "metadata": {
+    "generated": "2026-02-03T17:03:13.916Z",
+    "generator": "FileTree Pro Extension",
+    "version": "0.2.0",
+    "showIcons": false,
+    "maxDepth": 10
+  }
+}
+
+Host: BIET – Bapuji Institute of Engineering and Technology
+Event date: 11 February 2026
+Registration deadline countdown: 10 February 2026, 11:59 PM
+
+Theme:
+Innovation + Creativity + Exploration
+
+Tone:
+Energetic, premium, futuristic, youth-driven, inspiring.
+
+--------------------------------------------------
+
+STYLE REQUIREMENTS:
+
+- Pure dark background gradient (#050505 → #0b0b0f)
+- Neon glowing gradient blobs floating in background
+- Orange / blue / purple / cyan glow palette
+- Soft glassmorphism cards with blur + transparency
+- Large bold typography with high contrast
+- Minimal but luxurious layout
+- Smooth rounded corners
+- Subtle glow effects and reflections
+- Clean whitespace and centered composition
+- Premium AI startup / cybersecurity landing page vibe
+
+Visual mood:
+futuristic, cyber-tech, neon glass UI, liquid shapes, elegant motion
+
+--------------------------------------------------
+
+UI ELEMENTS:
+
+- Floating glass navigation bar
+- Gradient glowing buttons
+- Soft hover animations
+- Abstract floating organic shapes
+- Oversized hero typography
+- Card-based sections with blur glass effect
+- Smooth scroll layout
+- Modal popups for event details
+
+--------------------------------------------------
+
+ANIMATION STYLE (GSAP CDN):
+
+- Smooth parallax floating blobs
+- Scroll-trigger fade-in sections
+- Glow breathing animations
+- Button hover micro-interactions
+- Modal open/close transitions
+- Countdown digits animation
+
+--------------------------------------------------
+
+PAGE CONTENT STRUCTURE:
+
+1. HERO SECTION
+
+Title:
+INNOVARE 2026
+
+Subtitle:
+Redefining Possibilities
+
+Intro text:
+“Innovare is a celebration of ideas, creativity, and competitive spirit.
+A platform where coders, artists, gamers, designers, and thinkers unite
+to redefine what’s possible.”
+
+Live countdown timer:
+Label → “Registration closes in:”
+Countdown target:
+10 Feb 2026, 11:59 PM
+
+Primary button:
+“Register Now”
+(button opens Google Form placeholder link)
+
+--------------------------------------------------
+
+2. ABOUT SECTION
+
+Headline: About Innovare
+
+Text:
+“Hosted by BIET – Bapuji Institute of Engineering and Technology,
+Innovare 2026 is an inter-college festival showcasing innovation,
+skill, and imagination across disciplines.”
+
+Add animated neon gradient background accent.
+
+--------------------------------------------------
+
+3. EVENTS GRID SECTION
+
+Clickable glass cards:
+
+Code Arena → Coding & DSA
+Web Forge → Web Designing
+Vision Talks → Tech Talks
+FrameCraft → Photography & Videography
+HuntX → Treasure Hunt
+BattleZone → BGMI Tournament
+ArtVerse → Painting & Drawing
+Canva Clash → Poster Design
+
+On clicking a card:
+open futuristic modal popup with:
+
+- Event description
+- Rules & guidelines
+- Participation fee
+- Offline registration info
+- Contact coordinators
+- Register button (Google form placeholder)
+
+--------------------------------------------------
+
+4. WHY PARTICIPATE SECTION
+
+Cards with icons:
+
+- Networking
+- Recognition
+- Skill Showcase
+- Fun Competition
+
+--------------------------------------------------
+
+5. EVENT DATE + TIMELINE SECTION
+
+Date highlight:
+11 February 2026
+
+Timeline layout:
+- Opening ceremony
+- Competition rounds
+- Break sessions
+- Awards & closing
+
+--------------------------------------------------
+
+6. BROCHURE DOWNLOAD SECTION
+
+Headline: Event Brochure
+Button: Download PDF
+(link placeholder)
+
+--------------------------------------------------
+
+7. GALLERY / SPONSOR PREVIEW SECTION
+
+Grid placeholders for:
+- Sponsors
+- Event images
+
+--------------------------------------------------
+
+8. FOOTER
+
+Include:
+BIET – Bapuji Institute of Engineering and Technology
+Contact email placeholder
+Instagram placeholder
+“Made for Innovare 2026”
+
+--------------------------------------------------
+
+DESIGN GOAL:
+
+Make the site feel like a next-generation tech festival landing page.
+Bold, immersive, glowing, energetic.
+Prioritize visual impact, futuristic elegance, and smooth animations.
