@@ -45,7 +45,7 @@ function initNavbar() {
 
 // Countdown Timer
 function initCountdown() {
-  const countdownDate = new Date("February 10, 2026 23:59:00").getTime();
+  const countdownDate = new Date("February 20, 2026 8:59:00").getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();

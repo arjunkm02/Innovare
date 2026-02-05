@@ -575,13 +575,25 @@ h4,
                     background: $bg-dark-secondary;
                     border-radius: 50%;
                 }
+                .innovare{
+                    background-image: url("/source/logo.jpg");
+                    background-size: cover;
+                    background-position: center;
+                }
+                .biet{
+                    background-image: url("/source/bietLogo.jpeg");
+                    background-size: contain;
+                    background-position: center;
+                }
+                .mca{
+                    background-image: url("/source/mcaLogo.jpeg");
+                    background-size: contain;
+                    background-position: center;
+                }
                 .logo{
                     width: 230px;
                     height: 230px;
                     border-radius: 50%;
-                    background-image: url("/source/logo.jpg");
-                    background-size: cover;
-                    background-position: center;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -788,6 +800,7 @@ h4,
             flex: 1 1 100%;
             min-width: 0;
             margin-bottom: 1rem;
+            cursor: pointer;
 
             @media (min-width: 480px) {
                 flex: 1 1 calc(50% - 0.75rem);
