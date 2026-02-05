@@ -182,7 +182,7 @@ const eventsData = [
       "First team to finish wins",
     ],
     regType: "Online regestration only",
-    contact: "Dhanjay G S - 8050611832,8123016992 ",
+    contact: "Dhanjay G S - 8050611832, 8123016992 ",
   },
   {
     id: 6,
