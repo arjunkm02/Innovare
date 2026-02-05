@@ -119,7 +119,7 @@ const eventsData = [
     desc: "Design and develop a responsive website based on the given theme within the time limit.",
     icon: "fas fa-laptop-code",
     type: "Web Designing",
-    fee: "₹150 (team of 2)",
+    fee: "₹200 (team of 2)",
     rules: [
       "Team size: 2 members",
       "Duration: 3 Rounds",
@@ -155,7 +155,7 @@ const eventsData = [
     desc: "Capture and edit photos/videos based on given themes. Showcase your photography skills.",
     icon: "fas fa-camera",
     type: "Photography & Videography",
-    fee: "₹50",
+    fee: "₹100",
     rules: [
       "Individual participation",
       "Theme will be announced on spot",
@@ -172,7 +172,7 @@ const eventsData = [
     desc: "Solve puzzles, crack codes, and find clues in this exciting campus-wide treasure hunt.",
     icon: "fas fa-search",
     type: "Treasure Hunt",
-    fee: "₹200 (team of 4)",
+    fee: "₹400 (team of 4)",
     rules: [
       "Team size:4 members",
       "Duration: 3 Rounds",
@@ -190,17 +190,17 @@ const eventsData = [
     desc: "Compete in the ultimate BGMI tournament. Show your gaming skills and strategic thinking.",
     icon: "fas fa-gamepad",
     type: "BGMI Tournament",
-    fee: "₹300 (team of 4)",
+    fee: "₹400 (team of 4)",
     rules: [
       "Team size: 4 members and substitute not allowed",
       "participations must carry theie valid id cars proof for validation",
       "participitations must carry their own mobile",
       "All matches will be played in custome rooms",
       "rules will be announced on the spot",
-      "No mallpractices. if found, all the teams from that college will be disqualified"
+      "No mallpractices. if found, the team will be disqualified"
     ],
     regType: "Online Registration Only",
-    contact: "Samarth - 9353009174",
+    contact: "Samarth Y C - 9353009174, 9019418813",
   },
   {
     id: 7,
@@ -208,7 +208,7 @@ const eventsData = [
     desc: "Express your creativity through painting and drawing on the given theme and canvas.",
     icon: "fas fa-palette",
     type: "Painting & Drawing",
-    fee: "₹80",
+    fee: "₹100",
     rules: [
       "Individual participation",
       "Duration: 2 Rounds",
