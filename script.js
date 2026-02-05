@@ -197,7 +197,7 @@ const eventsData = [
       "participitations must carry their own mobile",
       "All matches will be played in custome rooms",
       "rules will be announced on the spot",
-      "No mallpractices. if found, the team will be disqualified"
+      "No mallpractices. if found, the team will be disqualified",
     ],
     regType: "Online Registration Only",
     contact: "Samarth Y C - 9353009174, 9019418813",

@@ -1255,6 +1255,9 @@ h4,
   font-size: 1rem;
   color: #ff4d00;
 }
+.modal-overlay .modal-container .modal-content .modal-details .modal-detail .detail-value span {
+  color: aliceblue;
+}
 .modal-overlay .modal-container .modal-content .modal-actions .modal-register-btn {
   background: linear-gradient(90deg, #ff4d00, #9d00ff);
   color: white;
