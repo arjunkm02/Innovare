@@ -532,8 +532,11 @@ function initRegisterButtons() {
 }
 
 // Brochure Download Handler
-function initBrochureDownload() {
-  const brochureButton = document.querySelector(".brochure-btn");
+function 
+initBrochureDownload() {
+  const brochureButton = document.querySelector(
+    ".brochure-btn,#brochure-btnid",
+  );
 
   brochureButton.addEventListener("click", function (e) {
     e.preventDefault();
@@ -548,11 +551,9 @@ function initBrochureDownload() {
 
     // Simulate download
     setTimeout(() => {
-      // In real, download PDF
-      showNotification("Brochure download starting...");
       // Open placeholder link
       window.open("https://example.com/innovare2026-brochure.pdf", "_blank");
-    }, 300);
+    }, 100);
   });
 }
 
