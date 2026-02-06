@@ -13,8 +13,20 @@ document.addEventListener("DOMContentLoaded", function () {
   initMobileMenu();
   initBrochureDownload();
 
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+
   console.log("INNOVARE 2026 - Redefining Possibilities");
 });
+
+
 
 // Navbar Scroll Effect - REMOVED transparency effect
 function initNavbar() {
@@ -112,6 +124,8 @@ const eventsData = [
     ],
     regType: "Online + Offline",
     contact: "Darshan S - 9591801585, 8867503727",
+    formLink:
+      "https://docs.google.com/forms/d/1LWOgXwWAvhaBJc3NQXSe665FJV4rzUbtT2Jh5maFY2Y/edit",
   },
   {
     id: 2,
@@ -129,6 +143,8 @@ const eventsData = [
     ],
     regType: "Online + Offline",
     contact: "Harshavardhan Raj - 9019081921, 9113045893",
+    formLink:
+      "https://docs.google.com/forms/d/1jexWn9n9x9tnt0omI_NfzhhLgb1tOTrVIN30PIvkpMM/edit",
   },
   {
     id: 3,
@@ -148,6 +164,8 @@ const eventsData = [
     ],
     regType: "Online + Offline",
     contact: "Prajwal G M - 8618545311",
+    formLink:
+      "https://docs.google.com/forms/d/1fvmx7hUeMGM17LWYTvwyDfloauwx1qkTO3k0NLk4ZBQ/edit",
   },
   {
     id: 4,
@@ -165,6 +183,8 @@ const eventsData = [
     ],
     regType: "On-site Registration",
     contact: "Yashwanth J R - 8073942178",
+    formLink:
+      "https://docs.google.com/forms/d/1OZjewWHiyYNMafZw0h0T9EiME9aPu-5L89ZoRftWm9g/edit",
   },
   {
     id: 5,
@@ -182,7 +202,9 @@ const eventsData = [
       "First team to finish wins",
     ],
     regType: "Online regestration only",
-    contact: "Dhanjay G S - 8050611832, 8123016992 ",
+    contact: "Dhananjay G S - 8050611832, 7483221520 ",
+    formLink:
+      "https://docs.google.com/forms/d/1S7ZnmPdh_NsrYVjJd_I4pcFkPyTegR_yFawekfaOVWw/edit",
   },
   {
     id: 6,
@@ -201,6 +223,8 @@ const eventsData = [
     ],
     regType: "Online Registration Only",
     contact: "Samarth Y C - 9353009174, 9019418813",
+    formLink:
+      "https://docs.google.com/forms/d/1AzBC4bO4z9QUIzdsbbuGUdpifIPfZTxKWIV-9UIjbLM/edit",
   },
   {
     id: 7,
@@ -218,6 +242,8 @@ const eventsData = [
     ],
     regType: "On-site Registration",
     contact: "Drisha D - 8861879189",
+    formLink:
+      "https://docs.google.com/forms/d/144G7-cH_7vNcVgvlt6Q7kdE7Yi_Qvv42DDqbUdSEOY0/edit",
   },
   {
     id: 8,
@@ -235,6 +261,9 @@ const eventsData = [
     ],
     regType: "Online + Offline registration",
     contact: "Rakesh R B - 9972950301",
+    contact: "Drisha D - 8861879189",
+    formLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScc0swMmK7EyMh165d6cYW1cl-LU0Yo19F3rOCgL9KjlZosiA/viewform?usp=publish-editor",
   },
 ];
 
@@ -484,14 +513,20 @@ function initRegisterButtons() {
         repeat: 1,
       });
 
-      // Simulate registration process
-      setTimeout(() => {
-        // In a real implementation, this would open a registration form
-        // For now, show a notification
-        showNotification(
-          "Registration will open soon! Stay tuned for updates.",
-        );
-      }, 300);
+      // Get current modal event title
+      const modalTitle = document.getElementById("modalTitle").textContent;
+
+      // Find matching event
+      const selectedEvent = eventsData.find(
+        (event) => event.title === modalTitle
+      );
+
+      if (selectedEvent && selectedEvent.formLink) {
+        window.open(selectedEvent.formLink, "_blank");
+      } else {
+        showNotification("Explore The Events And Register.");
+      }
+
     });
   });
 }
