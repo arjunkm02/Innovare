@@ -389,7 +389,7 @@ h4,
                 font-size: 2rem;
                 color: $secondary-color;
                 font-weight: 700;
-                margin-top: -0.5rem;
+                margin-top: -1.5rem;
             }
         }
 
@@ -1474,9 +1474,9 @@ h4,
                 font-size: 2rem;
             }
 
-            .countdown-separator {
-                display: none;
-            }
+            // .countdown-separator {
+            //     display: none;
+            // }
         }
     }
 }

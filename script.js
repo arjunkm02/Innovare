@@ -26,8 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("INNOVARE 2026 - Redefining Possibilities");
 });
 
-
-
 // Navbar Scroll Effect - REMOVED transparency effect
 function initNavbar() {
   // Update active nav link on scroll
@@ -174,7 +172,7 @@ const eventsData = [
     title: "FrameCraft",
     desc: "Capture and edit photos/videos based on given themes. Showcase your photography skills.",
     icon: "fas fa-camera",
-    type: "Photography & Videography",
+    type: "Photo & Video",
     fee: "₹100",
     rules: [
       "Individual participation",
@@ -234,7 +232,7 @@ const eventsData = [
     title: "ArtVerse",
     desc: "Express your creativity through painting and drawing on the given theme and canvas.",
     icon: "fas fa-palette",
-    type: "Painting & Drawing",
+    type: "Painting",
     fee: "₹100",
     rules: [
       "Individual participation",
@@ -521,7 +519,7 @@ function initRegisterButtons() {
 
       // Find matching event
       const selectedEvent = eventsData.find(
-        (event) => event.title === modalTitle
+        (event) => event.title === modalTitle,
       );
 
       if (selectedEvent && selectedEvent.formLink) {
@@ -529,14 +527,12 @@ function initRegisterButtons() {
       } else {
         showNotification("Explore The Events And Register.");
       }
-
     });
   });
 }
 
 // Brochure Download Handler
-function 
-initBrochureDownload() {
+function initBrochureDownload() {
   const brochureButton = document.querySelector(
     ".brochure-btn,#brochure-btnid",
   );

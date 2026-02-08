@@ -326,7 +326,7 @@ h4,
   font-size: 2rem;
   color: #00d9ff;
   font-weight: 700;
-  margin-top: -0.5rem;
+  margin-top: -1.5rem;
 }
 .hero .countdown-container .event-date {
   display: flex;
@@ -1349,9 +1349,6 @@ h4,
   }
   .hero .countdown .countdown-value {
     font-size: 2rem;
-  }
-  .hero .countdown .countdown-separator {
-    display: none;
   }
 }
 @media (max-width: 480px) {
