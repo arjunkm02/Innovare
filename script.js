@@ -137,7 +137,9 @@ const eventsData = [
     rules: [
       "Team size: 2 members",
       "Duration: 3 Rounds",
+      "Can use AI in first 2 rounds",
       "Theme will be revealed on spot",
+      "Design using: canva or figma",
       "Tech stack: HTML, CSS, JavaScript",
       "Judging based on design, functionality and creativity",
     ],
@@ -176,10 +178,11 @@ const eventsData = [
     fee: "₹100",
     rules: [
       "Individual participation",
-      "Theme will be announced on spot",
-      "Bring your own equipment",
-      "Editing time: 2 hours",
-      "Original content only, no stock images",
+      "Only phones will be allowed ",
+      "Editing apps Capcut, VN, PicsArt, Lightroom, inshot etc",
+      "using AI is restricted",
+      "theme will be announced on spot",
+      "elimination will be done after the 1st round",
     ],
     regType: "On-site Registration",
     contact: "Yashwanth J R - 8073942178",
@@ -561,19 +564,34 @@ initBrochureDownload() {
 function initMobileMenu() {
   const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
   const navMenu = document.querySelector(".nav-menu");
+  const navRegister = document.querySelector(".nav-register");
+  const navLinks = document.querySelectorAll(".nav-link");
 
-  mobileMenuBtn.addEventListener("click", function () {
-    navMenu.classList.toggle("active");
-    this.innerHTML = navMenu.classList.contains("active")
+  if (!mobileMenuBtn || !navMenu) return; // safety guard
+
+  mobileMenuBtn.addEventListener("click", () => {
+    const isActive = navMenu.classList.toggle("active");
+
+    // Change icon
+    mobileMenuBtn.innerHTML = isActive
       ? '<i class="fas fa-times"></i>'
       : '<i class="fas fa-bars"></i>';
+
+    // Toggle register visibility cleanly
+    if (navRegister) {
+      navRegister.style.display = isActive ? "none" : "";
+    }
   });
 
   // Close mobile menu when clicking a link
-  document.querySelectorAll(".nav-link").forEach((link) => {
+  navLinks.forEach((link) => {
     link.addEventListener("click", () => {
       navMenu.classList.remove("active");
       mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+
+      if (navRegister) {
+        navRegister.style.display = "";
+      }
     });
   });
 }
