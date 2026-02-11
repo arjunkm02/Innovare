@@ -144,7 +144,7 @@ const eventsData = [
       "Judging based on design, functionality and creativity",
     ],
     regType: "Online + Offline",
-    contact: "Harshavardhan Raj - 9019081921, 9113045893",
+    contact: "Ashrit G P - 8073745007 , 7204612312",
     formLink:
       "https://docs.google.com/forms/d/1jexWn9n9x9tnt0omI_NfzhhLgb1tOTrVIN30PIvkpMM/edit",
   },
