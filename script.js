@@ -55,7 +55,7 @@ function initNavbar() {
 
 // Countdown Timer
 function initCountdown() {
-  const countdownDate = new Date("February 23, 2026 8:59:00").getTime();
+  const countdownDate = new Date("February 18, 2026 12:59:00").getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
@@ -118,7 +118,7 @@ const eventsData = [
       "Duration: 3 Rounds",
       "Languages: C, C++, Java, Python",
       "Internet access not allowed",
-      "Participants should bring there own laptops",
+      "Participants should bring their own laptops",
       "Judging based on correctness and efficiency",
     ],
     regType: "Online + Offline",
@@ -137,7 +137,7 @@ const eventsData = [
       "Team size: 2 members",
       "Duration: 3 Rounds",
       "Can use AI in first 2 rounds",
-      "Participants should bring there own laptops",
+      "Participants should bring their own laptops",
       "Theme will be revealed on spot",
       "Design using: canva or figma",
       "Tech stack: HTML, CSS, JavaScript",
