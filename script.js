@@ -553,7 +553,7 @@ function initBrochureDownload() {
     // Simulate download
     setTimeout(() => {
       // Open placeholder link
-      window.open("https://example.com/innovare2026-brochure.pdf", "_blank");
+      window.open("./Assets/innovareBrochure.pdf", "_blank");
     }, 100);
   });
 }
