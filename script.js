@@ -497,41 +497,41 @@ function initAnimations() {
     delay: 15,
   });
 }
-
+//commented because regestration closed!
 // Register Button Handlers
-function initRegisterButtons() {
-  const registerButtons = document.querySelectorAll(
-    ".register-btn, .modal-register-btn",
-  );
+// function initRegisterButtons() {
+//   const registerButtons = document.querySelectorAll(
+//     ".register-btn, .modal-register-btn",
+//   );
 
-  registerButtons.forEach((button) => {
-    button.addEventListener("click", function (e) {
-      e.preventDefault();
+//   registerButtons.forEach((button) => {
+//     button.addEventListener("click", function (e) {
+//       e.preventDefault();
 
-      // Add click animation
-      gsap.to(this, {
-        scale: 0.95,
-        duration: 0.1,
-        yoyo: true,
-        repeat: 1,
-      });
+//       // Add click animation
+//       gsap.to(this, {
+//         scale: 0.95,
+//         duration: 0.1,
+//         yoyo: true,
+//         repeat: 1,
+//       });
 
-      // Get current modal event title
-      const modalTitle = document.getElementById("modalTitle").textContent;
+//       // Get current modal event title
+//       const modalTitle = document.getElementById("modalTitle").textContent;
 
-      // Find matching event
-      const selectedEvent = eventsData.find(
-        (event) => event.title === modalTitle,
-      );
+//       // Find matching event
+//       const selectedEvent = eventsData.find(
+//         (event) => event.title === modalTitle,
+//       );
 
-      if (selectedEvent && selectedEvent.formLink) {
-        window.open(selectedEvent.formLink, "_blank");
-      } else {
-        showNotification("Explore The Events And Register.");
-      }
-    });
-  });
-}
+//       if (selectedEvent && selectedEvent.formLink) {
+//         window.open(selectedEvent.formLink, "_blank");
+//       } else {
+//         showNotification("Explore The Events And Register.");
+//       }
+//     });
+//   });
+// }
 
 // Brochure Download Handler
 function initBrochureDownload() {
