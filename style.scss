@@ -1230,27 +1230,18 @@ h4,
         }
 
         .footer-credit {
-            color: $secondary-color;
+            color: $text-primary;
             display: flex;
             align-items: center;
             gap: 5px;
 
-            i {
-                width: 36px;
-                height: 36px;
-                border-radius: 50%;
-                @include glass-effect;
-                @include flex-center;
-                color: $text-secondary;
+            a{
                 text-decoration: none;
-                transition: $transition;
 
-                &:hover {
-                    color: $primary-color;
-                    transform: translateY(-5px);
-                    border-color: $primary-color;
+                .highlight{
+                    color: $secondary-color;
                 }
-                }
+            }
         }
     }
 }
